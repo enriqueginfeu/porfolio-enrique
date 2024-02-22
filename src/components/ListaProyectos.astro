@@ -1,0 +1,26 @@
+---
+export interface Props {
+    img: string;
+    titulo: string;
+    tipo: string;
+    tecnologias: string;
+    url: string
+
+}
+const { img, titulo, tipo, tecnologias, url  } = Astro.props
+---
+
+    <div class="text-white">
+        <a href={url} target="_blank">
+            <img src={img} class="hover:border-[1px] drop mb-2 rounded-md hover:scale-95 hover:transition hover:duration-500" alt={titulo}>
+        </a>
+        <h2>{titulo}</h2>
+        <h2>{tipo}</h2>
+        <p>{tecnologias}</p>
+    </div>
+
+<style>
+        .drop {
+        filter: drop-shadow(0 0 0.70rem rgb(170, 249, 255)); 
+    }
+</style>

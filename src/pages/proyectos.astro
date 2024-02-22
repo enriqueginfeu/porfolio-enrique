@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro'
+import ListaProyectos from '../components/ListaProyectos.astro'
+
+---
+
+<Layout
+    title='Proyectos'
+>
+
+    <div>
+        <h1 class="text-4xl text-center font-light my-10 text-white">
+            Conoce mis proyectos
+        </h1>
+    </div>
+    <div>
+        <a href="/" class="text-white text-xl ml-10 px-5 border-[1px] border-gray-300 rounded-md py-1 hover:border-red-700 hover:text-red-700 hover:transition hover:duration-500">
+            Ir al inicio
+        </a>
+    </div>
+    <div class="grid grid-cols-1 w-2/3 mt-10 sm:w-1/2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mb-10 xl:p-10 gap-10 md:w-1/2 m-auto">
+        <ListaProyectos 
+            img='/img/logo-ford.png'
+            titulo='Ford Argentina'
+            tipo='Sitio Web'
+            tecnologias='Astro - JavaScript - Tailwind CSS'
+            url='https://fordargentina.netlify.app'
+        />
+
+        <ListaProyectos 
+            img='/img/administrador.png'
+            titulo='Administrador de pacientes'
+            tipo='Aplicacion'
+            tecnologias='React JS - Tailwind CSS'
+            url='https://citas-23.netlify.app/'
+        />
+
+        <ListaProyectos 
+            img='/img/planificador.jpg'
+            titulo='Planificador de gastos'
+            tipo='Aplicacion'
+            tecnologias='React JS - Css'
+            url='planificador-de-gastos23.netlify.app'
+        />
+
+        <ListaProyectos 
+            img='/img/blog-marvel.png'
+            titulo='Blog de noticias Marvel'
+            tipo='Sitio Web'
+            tecnologias='Astro - Tailwind CSS - Markdown'
+            url='https://blognoticiasmarvel.netlify.app'
+        />
+
+        <ListaProyectos 
+            img='/img/logo-hawai.png'
+            titulo='Hawai'
+            tipo='Sitio Web'
+            tecnologias='Html - Tailwind CSS - javaScript'
+            url='https://hawai23.netlify.app'
+        />
+        <ListaProyectos 
+            img='/img/bebidas.jpg'
+            titulo='Buscador de Bebidas'
+            tipo='Aplicacion'
+            tecnologias='Html - BootStrap - javaScript'
+            url='https://buscadordebebidas2023.netlify.app'
+        />
+        <ListaProyectos 
+            img='/img/logo-motos.png'
+            titulo='Motos Deluxe'
+            tipo='Sitio Web'
+            tecnologias='Html - Tailwind CSS - javaScript'
+            url='https://motosdeluxeargentina.netlify.app'
+        />
+    </div>
+
+
+
+</Layout>
