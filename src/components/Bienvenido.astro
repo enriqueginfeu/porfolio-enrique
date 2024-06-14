@@ -6,15 +6,28 @@
                 Bienvenido
             </h2>
             <h2 class="text-base 2xl:text-lg">
-                Hola, soy Enrique Ginfeu, un desarrollador web con un fuerte enfoque en la experiencia del usuario, animaciones y Micro interacciones
+                Hola, soy Enrique Ginfeu, un desarrollador web y aplicaciones con un enfoque en la experiencia del usuario, animaciones y Micro interacciones
             </h2>
         </div>
-        <div class="flex justify-center flex-wrap gap-2 space-y-3 lg:relative lg:bottom-10 xl:flex-nowrap xl:justify-start xl:w-12 xl:gap-5">
-            <img src="/img/astro-2.png" class="dropAstro" alt="logo astro js">
-            <img src="/img/react.png" class="dropRT" alt="logo react js">
-            <img src="/img/next2.jpg" class="dropPerfil" alt="logo next js">
-            <img src="/img/tailwind.png" class="dropRT" alt=" logo tailwind css">
-            <img src="/img/js.png" class="dropJS" alt="logo javascript">
+        <div class="flex justify-center items-center flex-wrap gap-5 space-y-3 lg:relative lg:bottom-10 xl:flex-nowrap xl:justify-start xl:bottom-24 xl:gap-5">
+            <a href="https://astro.build/">
+                <img src="/img/logo-astro2.png" class="dropAstro mt-5" alt="logo astro js">
+            </a>
+            <a href="https://es.react.dev/">
+                <img src="/img/react.png" class="dropRT" alt="logo react js">
+            </a>
+            <a href="https://nextjs.org/">
+                <img src="/img/next2.jpg" class="dropNext" alt="logo next js">
+            </a>
+            <a href="https://tailwindcss.com/">
+                <img src="/img/tailwind.png" class="dropRT" alt=" logo tailwind css">
+            </a>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+                <img src="/img/js.png" class="dropJS" alt="logo javascript">
+            </a>
+            <a href="https://nodejs.org/en">
+                <img src="/img/logo-node.png" class="dropJS" alt="logo node js">
+            </a>
         </div>
     </div>
     <div class="relative xl:right-5 xl:top-4 2xl:top-0 2xl:right-0">
@@ -23,17 +36,21 @@
 </div>
 
 <style>
-    .dropAstro {
+    .dropAstro:hover {
 
         filter: drop-shadow(0 0 0.75rem rgb(255, 26, 72));
     }
 
-    .dropRT {
+    .dropRT:hover {
         filter: drop-shadow(0 0 0.75rem rgb(0, 206, 221)); 
     }
 
-    .dropJS {
+    .dropJS:hover {
         filter: drop-shadow(0 0 0.75rem rgb(236, 244, 0));
+    }
+
+    .dropNext:hover {
+        filter: drop-shadow(0 0 0.45rem rgb(82, 82, 82));
     }
     
     .dropPerfil {
